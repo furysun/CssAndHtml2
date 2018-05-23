@@ -1,0 +1,117 @@
+.agreement {
+    text-align: center;
+}
+
+#agree-button {
+    background-color: crimson;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+#agree-button:hover {
+    color: black;
+    background-color: rosybrown;
+}
+
+.header {
+    height: 46px;
+    background-color: crimson;
+}
+
+.logo {
+    float: left;
+}
+
+.logo-image {
+    height: 46px;
+    width: 70px;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+li:hover {
+    color: black;
+}
+
+.navbar-icon {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+#subscribe-button {
+    width: 100px;
+
+    border: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+.content-row {
+    height: 200px;
+}
+
+.news-container {
+    position: relative;
+    height: 200px;
+    float: left;
+
+    margin: 2px;
+}
+
+.news-container-s {
+    width: 396px;
+    background-color: aquamarine;
+}
+
+.news-container-m {
+    width: 796px;
+    background-color: beige;
+}
+
+.news-container-l {
+    width: 1196px;
+    background-color: rosybrown;
+}
+.news-img-s{
+    width: 396px;
+    height: 200px;
+}
+.news-img-m{
+    width: 796px;
+    height: 200px;
+}
+.news-img-l{
+    width: 1196px;
+    height: 200px;
+}
+
+.news-topic{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: aliceblue;
+}
+.news-details{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: aliceblue;
+}
+
