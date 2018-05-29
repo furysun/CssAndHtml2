@@ -34,6 +34,27 @@ nav a:hover {
     padding: 15px;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFC0CB;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 .row:after {
     content: "";
@@ -85,6 +106,18 @@ div#myDiv {
     border: 1px solid black;
     background: #00BFFF;
     background: linear-gradient(to right, #00BFFF , #FFC0CB);
+}
+
+.enlarged-img {
+    width: 100px;
+    height: 100px;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+
+.enlarged-img:hover {
+    width: 300px;
+    height: 300px;
 }
 
 footer {
