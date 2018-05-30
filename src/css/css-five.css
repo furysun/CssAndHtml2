@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightcyan;
+    }
+}
 
 header {
     padding: 20px;
@@ -111,7 +124,7 @@ div#myDiv {
 .enlarged-img {
     width: 100px;
     height: 100px;
-    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: width 2s, height 4s;
     transition: width 2s, height 4s;
 }
 
