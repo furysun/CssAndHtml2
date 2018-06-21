@@ -36,10 +36,58 @@
 </div>
 <div>
     <h2>JavaScript in Head</h2>
-
     <p id="demo4">A Paragraph.</p>
-
     <button type="button" onclick="myFunction()">Try it</button>
 </div>
+
+<div>
+    <p id="demo5"></p>
+    <script>
+        document.getElementById("demo5").innerHTML = 5 + 6;
+    </script>
+</div>
+
+<div>
+    <script>
+        document.write(5 + 6);
+    </script>
+</div>
+
+<div>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+</div>
+<div>
+    <script>
+        alert("Dangerous! claws with claws");
+    </script>
+</div>
+<div>
+    <p id="demo6"></p>
+    <script>
+
+        var x, y, z;
+        x = 5;
+        y = 6;
+        z = x + y;
+        document.getElementById("demo6").innerHTML =
+            "The value of z is " + z + ".";
+    </script>
+</div>
+
+<div>
+    <p>JavaScript code blocks are written between { and }</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="dem"></p>
+    <p id="de"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("dem").innerHTML = "Hello Dolly!";
+            document.getElementById("de").innerHTML = "How are you?";
+        }
+    </script>
+</div>
+
 </body>
 </html>
