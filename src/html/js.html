@@ -108,20 +108,38 @@
         function myFunction(p1, p2) {
             return p1 * p2;
         }
+
         document.getElementById("demo8").innerHTML = myFunction(4, 3);
     </script>
 </div>
 <p id="demo9"></p>
 <script>
     // Create an object:
-    var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    var person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
 
     // Display some data from the object:
     document.getElementById("demo9").innerHTML =
         person.firstName + " is " + person.age + " years old.";
 </script>
 <div>
+    <p>A GLOBAL variable can be accessed from any script or function.</p>
 
+    <p id="demo11"></p>
+
+    <script>
+        var carName = "Volvo";
+        myFunction();
+
+        function myFunction() {
+            document.getElementById("demo11").innerHTML =
+                "I can display " + carName;
+        }
+    </script>
+</div>
+
+<div>
+    <button onclick="document.getElementById('demo12').innerHTML=Date()">The time is?</button>
+    <p id="demo12"></p>
 </div>
 
 </body>
