@@ -142,5 +142,44 @@
     <p id="demo12"></p>
 </div>
 
+<div>
+    <h1>Methods for working with numbers</h1>
+    <p id="demo23"></p>
+
+    <script>
+        var x = 123;
+        document.getElementById("demo23").innerHTML =
+            x.toString() + "<br>" +
+            (123).toString() + "<br>" +
+            (100 + 23).toString();
+    </script>
+
+    <p id="demo24"></p>
+
+    <script>
+        var x = 9.656;
+        document.getElementById("demo24").innerHTML =
+            x.toPrecision() + "<br>" +
+            x.toPrecision(2) + "<br>" +
+            x.toPrecision(4) + "<br>" +
+            x.toPrecision(6);
+    </script>
+
+    <h2>JavaScript Arrays</h2>
+
+    <p id="demo25"></p>
+
+    <script>
+        var cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo25").innerHTML = cars;
+    </script>
+
+    <p id="demo26"></p>
+
+    <script>
+        var cars = ["Opel", "Volvo", "BMW"];
+        document.getElementById("demo26").innerHTML = cars[0];
+    </script>
+</div>
 </body>
 </html>
