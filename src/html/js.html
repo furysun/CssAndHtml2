@@ -181,5 +181,94 @@
         document.getElementById("demo26").innerHTML = cars[0];
     </script>
 </div>
+<div>
+    <h2>JavaScript Array Methods</h2>
+
+    <h2>push()</h2>
+
+    <p>The push() method appends a new element to an array.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo34"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo34").innerHTML = fruits;
+
+        function myFunction() {
+            fruits.push("Kiwi");
+            document.getElementById("demo34").innerHTML = fruits;
+        }
+    </script>
+</div>
+<div>
+    <h2>JavaScript Math.random()</h2>
+
+    <p>Every time you click the button, getRndInteger(min, max) returns a random number between 0
+        and 9 (both included):</p>
+
+    <button onclick="document.getElementById('demo1234').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+    <p id="demo1234"></p>
+
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+    </script>
+</div>
+<div>
+    <p>The sort() method sorts an array alphabetically.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo56"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo56").innerHTML = fruits;
+
+        function myFunction() {
+            fruits.sort();
+            document.getElementById("demo56").innerHTML = fruits;
+        }
+    </script>
+</div>
+<div>
+    <h2>JavaScript ISO Dates</h2>
+
+    <p id="234"></p>
+
+    <script>
+        var d = new Date("2015-03-25");
+        document.getElementById("234").innerHTML = d;
+    </script>
+</div>
+<div>
+    <h2>JavaScript setFullYear()</h2>
+
+    <p>The setFullYear() method sets the year of a date object:</p>
+
+    <p id="432"></p>
+
+    <script>
+        var d = new Date();
+        d.setFullYear(2020);
+        document.getElementById("432").innerHTML = d;
+    </script>
+</div>
+<div>
+    <h2>JavaScript Math.PI</h2>
+
+    <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+    <p id="dem3o"></p>
+
+    <script>
+        document.getElementById("dem3o").innerHTML = Math.PI;
+    </script>
+</div>
+
 </body>
 </html>
