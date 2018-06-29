@@ -285,5 +285,43 @@
         document.getElementById("dem4o").innerHTML = text;
     </script>
 </div>
+
+<div>
+    <p id="demo45"></p>
+    <script>
+        try {
+            adddlert("Welcome guest!");
+        }
+        catch(err) {
+            document.getElementById("demo45").innerHTML = err.message;
+        }
+    </script>
+</div>
+    <p>Please input a number between 5 and 10:</p>
+
+    <input id="demo67" type="text">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+
+    <script>
+        function myFunction() {
+            var message, x;
+            message = document.getElementById("p01");
+            message.innerHTML = "";
+            x = document.getElementById("demo67").value;
+            try {
+                if(x == "")  throw "empty";
+                if(isNaN(x)) throw "not a number";
+                x = Number(x);
+                if(x < 5)    throw "too low";
+                if(x > 10)   throw "too high";
+            }
+            catch(err) {
+                message.innerHTML = "Input is " + err;
+            }
+        }
+    </script>
+</div>
+<br>
 </body>
 </html>
