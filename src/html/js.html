@@ -368,6 +368,43 @@
         }
     </script>
 </div>
+<div>
+    <h2>The JavaScript <b>this</b> Keyword</h2>
+
+    <p>In this example, <b>this</b> represents the window Object:</p>
+
+    <p id="demo2324"></p>
+
+    <script>
+        var x = this;
+        document.getElementById("demo2324").innerHTML = x;
+    </script>
+
+    <h2>The JavaScript <b>this</b> Keyword</h2>
+
+    <p>In this example, <b>this</b> represents the person object that "owns" the fullName method.</p>
+
+    <p id="456"></p>
+
+    <script>
+        document.getElementById("456").innerHTML = myFunction();
+        function myFunction() {
+            return this;
+        }
+    </script>
+
+    <p>In this example, <b>this</b> represents the person object that "owns" the fullName method.</p>
+
+    <p id="876"></p>
+
+    <script>
+        "use strict";
+        document.getElementById("876").innerHTML = myFunction();
+        function myFunction() {
+            return this;
+        }
+    </script>
+</div>
 <br>
 </body>
 </html>
