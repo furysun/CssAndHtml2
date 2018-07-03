@@ -405,6 +405,23 @@
         }
     </script>
 </div>
+<div>
+    <p>Setting a default value to a function parameter.</p>
+    <p id="dem345o"></p>
+
+    <script>
+        function myFunction(x, y) {
+            if (y === undefined) {
+                y = 0;
+            }
+            return x * y;
+        }
+        document.getElementById("dem345o").innerHTML = myFunction(4);
+    </script>
+
+
+</div>
+
 <br>
 </body>
 </html>
