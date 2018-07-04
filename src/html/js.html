@@ -292,35 +292,35 @@
         try {
             adddlert("Welcome guest!");
         }
-        catch(err) {
+        catch (err) {
             document.getElementById("demo45").innerHTML = err.message;
         }
     </script>
 </div>
-    <p>Please input a number between 5 and 10:</p>
+<p>Please input a number between 5 and 10:</p>
 
-    <input id="demo67" type="text">
-    <button type="button" onclick="myFunction()">Test Input</button>
-    <p id="p01"></p>
+<input id="demo67" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
 
-    <script>
-        function myFunction() {
-            var message, x;
-            message = document.getElementById("p01");
-            message.innerHTML = "";
-            x = document.getElementById("demo67").value;
-            try {
-                if(x == "")  throw "empty";
-                if(isNaN(x)) throw "not a number";
-                x = Number(x);
-                if(x < 5)    throw "too low";
-                if(x > 10)   throw "too high";
-            }
-            catch(err) {
-                message.innerHTML = "Input is " + err;
-            }
+<script>
+    function myFunction() {
+        var message, x;
+        message = document.getElementById("p01");
+        message.innerHTML = "";
+        x = document.getElementById("demo67").value;
+        try {
+            if (x == "") throw "empty";
+            if (isNaN(x)) throw "not a number";
+            x = Number(x);
+            if (x < 5) throw "too low";
+            if (x > 10) throw "too high";
         }
-    </script>
+        catch (err) {
+            message.innerHTML = "Input is " + err;
+        }
+    }
+</script>
 </div>
 <div>
     <p>Please input a number between 5 and 10:</p>
@@ -337,13 +337,13 @@
             message.innerHTML = "";
             x = document.getElementById("demo234").value;
             try {
-                if(x == "")  throw "is empty";
-                if(isNaN(x)) throw "is not a number";
+                if (x == "") throw "is empty";
+                if (isNaN(x)) throw "is not a number";
                 x = Number(x);
-                if(x > 10)   throw "is too high";
-                if(x < 5)    throw "is too low";
+                if (x > 10) throw "is too high";
+                if (x < 5) throw "is too low";
             }
-            catch(err) {
+            catch (err) {
                 message.innerHTML = "Input " + err;
             }
             finally {
@@ -388,6 +388,7 @@
 
     <script>
         document.getElementById("456").innerHTML = myFunction();
+
         function myFunction() {
             return this;
         }
@@ -400,6 +401,7 @@
     <script>
         "use strict";
         document.getElementById("876").innerHTML = myFunction();
+
         function myFunction() {
             return this;
         }
@@ -416,14 +418,16 @@
             }
             return x * y;
         }
+
         document.getElementById("dem345o").innerHTML = myFunction(4);
     </script>
 </div>
 <div>
     <script>
         var x = 10;
-        switch(x) {
-            case 10: alert("Hello");
+        switch (x) {
+            case 10:
+                alert("Hello");
         }
     </script>
 
@@ -443,7 +447,57 @@
         document.getElementById("dem6r7o").innerHTML = x;
     </script>
 </div>
+<div>
+    <p>the expression in js can be written in different ways and in the end
+        will work correctly as in these pimers:</p>
 
+    <p>Example 1</p>
+    <p id="23425"></p>
+    <script>
+        document.getElementById("23425").innerHTML = myFunction(55);
+
+        function myFunction(a) {
+            var power = 10
+            return a * power
+        }
+    </script>
+    <p>Example 2</p>
+    <p id="de3mo"></p>
+    <script>
+        document.getElementById("de3mo").innerHTML = myFunction(55);
+
+        function myFunction(a) {
+            var power = 10;
+            return a * power;
+        }
+    </script>
+    <p>code that is not written correctly:</p>
+    <p>Example 3</p>
+    <p>
+        function myFunction(a) {
+        var
+        power = 10;
+        return
+        a * power;
+        }
+    </p>
+</div>
+<div>
+    <h2>Create Object from JSON String</h2>
+
+    <p id="de1236mo"></p>
+
+    <script>
+        var text = '{"employees":[' +
+            '{"firstName":"John","lastName":"Doe" },' +
+            '{"firstName":"Anna","lastName":"Smith" },' +
+            '{"firstName":"Peter","lastName":"Jones" }]}';
+
+        obj = JSON.parse(text);
+        document.getElementById("de1236mo").innerHTML =
+            obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    </script>
+</div>
 <br>
 </body>
 </html>
