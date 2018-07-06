@@ -498,6 +498,77 @@
             obj.employees[1].firstName + " " + obj.employees[1].lastName;
     </script>
 </div>
+<div>
+    <h2>JavaScript Can Validate Input</h2>
+
+    <p>Please input a number between 1 and 10:</p>
+
+    <input id="numb">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="demo435"></p>
+
+    <script>е
+    function myFunction() {
+        var x, text;
+
+        // Get the value of the input field with id="numb"
+        x = document.getElementById("numb").value;
+
+        // If x is Not a Number or less than one or greater than 10
+        if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+        } else {
+            text = "Input OK";
+        }
+        document.getElementById("demo435").innerHTML = text;
+    }
+    </script>
+</div>
+<div>
+    <p>Enter a number and click OK:</p>
+
+    <input id="id31" type="number" min="100" max="300" required>
+    <button onclick="myFunction()">OK</button>
+
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var inpObj = document.getElementById("id31");
+            if (!inpObj.checkValidity()) {
+                document.getElementById("demo").innerHTML = inpObj.validationMessage;
+            } else {
+                document.getElementById("demo").innerHTML = "Input OK";
+            }
+        }
+    </script>
+</div>
+<div>
+    <p>Enter a number and click OK:</p>
+
+    <input id="id1" type="number" min="100">
+    <button onclick="myFunction()">OK</button>
+
+    <p>If the number is less than 100 (the input's min attribute), an error message will be displayed.</p>
+
+    <p id="de342mo"></p>
+
+    <script>
+        function myFunction() {
+            var txt = "";
+            if (document.getElementById("id1").validity.rangeUnderflow) {
+                txt = "Value too small";
+            } else {
+                txt = "Input OK";
+            }
+            document.getElementById("de342mo").innerHTML = txt;
+        }
+    </script>
+</div>
 <br>
 </body>
 </html>
