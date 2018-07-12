@@ -595,6 +595,40 @@
         document.getElementById("dem321o").innerHTML = x;
     </script>
 </div>
+<div>
+    <p id="d23emo"></p>
+
+    <script>
+        var person = {
+            firstName: "John",
+            lastName : "Doe",
+            id       : 5566,
+        };
+        person.name = function() {
+            return this.firstName + " " + this.lastName;
+        };
+
+        document.getElementById("d23emo").innerHTML =
+            "My father is " + person.name();
+    </script>
+</div>
+<div>
+    <h2>JavaScript Object Constructors</h2>
+    <p id="dem456o"></p>
+    <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        var myFather = new Person("John", "Doe", 50, "blue");
+
+        document.getElementById("dem456o").innerHTML =
+            "My father is " + myFather.age + ".";
+    </script>
+</div>
 <br>
 </body>
 </html>
