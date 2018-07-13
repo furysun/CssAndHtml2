@@ -510,6 +510,7 @@
     <p id="demo435"></p>
 
     <script>е
+
     function myFunction() {
         var x, text;
 
@@ -575,7 +576,7 @@
     <p id="356"></p>
 
     <script>
-        var  x = 10;
+        var x = 10;
         {
             let x = 2;
         }
@@ -588,7 +589,7 @@
     <p id="dem321o"></p>
 
     <script>
-        var  x = 10;
+        var x = 10;
         {
             const x = 2;
         }
@@ -601,10 +602,10 @@
     <script>
         var person = {
             firstName: "John",
-            lastName : "Doe",
-            id       : 5566,
+            lastName: "Doe",
+            id: 5566,
         };
-        person.name = function() {
+        person.name = function () {
             return this.firstName + " " + this.lastName;
         };
 
@@ -627,6 +628,41 @@
 
         document.getElementById("dem456o").innerHTML =
             "My father is " + myFather.age + ".";
+    </script>
+</div>
+<div>
+    <h2>Creating and using an object method.</h2>
+    <p>A method is actually a function definition stored as a property value.</p>
+    <p id="demo2345"></p>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById("demo2345").innerHTML = person.fullName();
+    </script>
+</div>
+<div>
+    <h2>An object method is a function definition stored as a property value.</h2>
+    <p>If you access it without (), it will return the function definition:</p>
+
+    <p id="dem242o"></p>
+
+    <script>
+        var person = {
+            firstName: "John",
+            lastName : "Doe",
+            id       : 5566,
+            fullName : function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("dem242o").innerHTML = person.fullName;
     </script>
 </div>
 <br>
