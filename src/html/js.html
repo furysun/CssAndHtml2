@@ -769,8 +769,66 @@
         }
         document.getElementById("dem65o").innerHTML = findMax(4, 5, 6, 7);
     </script>
+</div>
+<div>
+    <h2>JavaScript Functions</h2>
 
+    <p>In HTML the value of <b>this</b>, in a global function, is the window object.</p>
 
+    <p id="0987"></p>
+
+    <script>
+        var x = myFunction();
+        function myFunction() {
+            return this;
+        }
+        document.getElementById("0987").innerHTML = x;
+    </script>
+</div>
+<div>
+    <h2>JavaScript Functions</h2>
+
+    <p>This example creates an object with 3 properties (firstName, lastName, fullName).</p>
+    <p>The fullName property is a method:</p>
+
+    <p id="de123432mo"></p>
+
+    <script>
+        var myObject = {
+            firstName:"John",
+            lastName: "Doe",
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        x = myObject.fullName();
+        document.getElementById("de123432mo").innerHTML = x;
+    </script>
+</div>
+<div>
+    <h2>JavaScript Functions</h2>
+    <p>This example calls the fullName method of person, using it on person1:
+    </p>
+
+    <p id="de231mo"></p>
+
+    <script>
+        var person = {
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        var person1 = {
+            firstName:"Cat",
+            lastName: "Doe",
+        }
+        var person2 = {
+            firstName:"Dog",
+            lastName: "Doe",
+        }
+        var x = person.fullName.call(person1);
+        document.getElementById("de231mo").innerHTML = x;
+    </script>
 </div>
 <br>
 </body>
