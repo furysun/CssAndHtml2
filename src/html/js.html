@@ -738,6 +738,40 @@
         })();
     </script>
 </div>
+<div>
+    <p>Setting a default value to a function parameter.</p>
+    <p id="de34mo"></p>
+
+    <script>
+        function myFunction(x, y) {
+            if (y === undefined) {
+                y = 0;
+            }
+            return x * y;
+        }
+        document.getElementById("de34mo").innerHTML = myFunction(6);
+    </script>
+</div>
+<div>
+    <p>Finding the largest number.</p>
+    <p id="dem65o"></p>
+
+    <script>
+        function findMax() {
+            var i;
+            var max = -Infinity;
+            for(i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("dem65o").innerHTML = findMax(4, 5, 6, 7);
+    </script>
+
+
+</div>
 <br>
 </body>
 </html>
