@@ -830,6 +830,99 @@
         document.getElementById("de231mo").innerHTML = x;
     </script>
 </div>
+
+<div>
+    <h2>JavaScript apply()</h2>
+
+    <p>This example returns the highest number in an array of numbers:</p>
+
+    <p id="dem098o"></p>
+
+    <script>
+        document.getElementById("dem098o").innerHTML = Math.max.apply(" ", [1,2,3]);
+    </script>
+</div>
+<div>
+    <p>A function can access variables defined inside the function:</p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="de4567mo"></p>
+
+    <script>
+        function myFunction() {
+            var a = 4;
+            document.getElementById("de4567mo").innerHTML = a * a;
+        }
+
+    </script>
+</div>
+<div>
+    <h2>JavaScript Function Closures</h2>
+
+    <p>Counting with a global variable.</p>
+
+    <p id="demo765"></p>
+
+    <script>
+        // Initiate counter
+        var counter = 0;
+        // Function to increment counter
+        function add() {
+            counter += 1;
+        }
+        // Call add() 3 times
+        add();
+        add();
+        add();
+
+        // The counter should now be 3
+        document.getElementById("demo765").innerHTML = "The counter is: " + counter;
+    </script>
+</div>
+<div>
+    <h2>JavaScript Function Closures</h2>
+
+    <p>Counting with a local variable.</p>
+
+    <p id="de0987mo"></p>
+
+    <script>
+        // Initiate counter
+        var counter = 0;
+        // Function to increment counter
+        function add() {
+            var counter;
+            counter += 1;
+        }
+        // Call add() 3 times
+        add();
+        add();
+        add();
+        // The result is not 3 because you mix up the globaland local counter
+        document.getElementById("de0987mo").innerHTML = "The counter is: " + counter;
+    </script>
+</div>
+<div>
+    <h2>JavaScript Closures</h2>
+
+    <p>Counting with a local variable.</p>
+
+    <button type="button" onclick="myFunction()">Count!</button>
+
+    <p id="dem547o">0</p>
+
+    <script>
+        var add = (function () {
+            var counter = 0;
+            return function () {counter += 1; return counter;}
+        })();
+
+        function myFunction(){
+            document.getElementById("dem547o").innerHTML = add();
+        }
+    </script>
+</div>
 <br>
 </body>
 </html>
