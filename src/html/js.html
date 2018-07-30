@@ -903,6 +903,22 @@
         document.getElementById("de0987mo").innerHTML = "The counter is: " + counter;
     </script>
 </div>
+
+<div>
+    <h2>A function can access variables defined outside the function:</h2>
+
+    <button type="button" onclick="myFunction1()">Click Me!</button>
+
+    <p id="dem123456o"></p>
+
+    <script>
+        var a = 4;
+        function myFunction1() {
+            document.getElementById("dem123456o").innerHTML = a * a;
+        }
+    </script>
+</div>
+
 <div>
     <h2>JavaScript Closures</h2>
 
@@ -915,7 +931,8 @@
     <script>
         var add = (function () {
             var counter = 0;
-            return function () {counter += 1; return counter;}
+            return function () {counter += 1;
+            return counter;}
         })();
 
         function myFunction(){
@@ -923,6 +940,7 @@
         }
     </script>
 </div>
+
 <br>
 </body>
 </html>
