@@ -940,7 +940,39 @@
         }
     </script>
 </div>
+<div>
+    <h2>My First Page</h2>
 
+    <p id="dem1345o"></p>
+
+    <script>
+        document.getElementById("dem1345o").innerHTML = "Hello DOM!";
+    </script>
+</div>
+<div>
+    <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname" value="Donald"><br>
+        Last name: <input type="text" name="lname" value="Duck"><br><br>
+    </form>
+
+    <p>Click "Try it" to display the value of each element in the form.</p>
+
+    <button onclick="myFunction12()">Try it</button>
+
+    <p id="dem2340o"></p>
+
+    <script>
+        function myFunction12() {
+            var x = document.forms["frm1"];
+            var text = "";
+            var i;
+            for (i = 0; i < x.length ;i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("dem2340o").innerHTML = text;
+        }
+    </script>
+</div>
 <br>
 </body>
 </html>
