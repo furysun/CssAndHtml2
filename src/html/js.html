@@ -973,6 +973,45 @@
         }
     </script>
 </div>
+<div>
+    <h2 id="intro">Hello Cat!</h2>
+    <p>This example demonstrates the <b>getElementById</b> method!</p>
+    <p id="demoDemo"/>
+
+    <script>
+        var myElement = document.getElementById("intro");
+        document.getElementById("demoDemo").innerHTML = "The text from the intro paragraph is "
+            + myElement.innerHTML;
+    </script>
+</div>
+
+<div>
+    <h2>Hello KITTY-cat!!</h2>
+
+    <div id="main">
+        <p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+    </div>
+
+    <h2 id="demoO"></h2>
+    <script>
+        var x = document.getElementById("main");
+        var y = x.getElementsByTagName("h2");
+        document.getElementById("demoO").innerHTML =
+            'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+    </script>
+</div>
+<div>
+    <h2>Hello Dog<3!</h2>
+    <p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+    <p id="dem45o"></p>
+
+    <script>
+        var x = document.getElementsByClassName("intro");
+        document.getElementById("dem45o").innerHTML =
+            'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+    </script>
+</div>
 <br>
 </body>
 </html>
