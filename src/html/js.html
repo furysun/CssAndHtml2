@@ -1012,6 +1012,21 @@
             'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
     </script>
 </div>
+<div>
+    <h2>Hi!</h2>
+
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+    <p class="intro"><3 <b>querySelectorAll</b> method.</p>
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+    <p id="d67emo"></p>
+
+    <script>
+        var x = document.querySelectorAll("p.intro");
+        document.getElementById("d67emo").innerHTML =
+            'The first paragraph (index 0) with class="intro": ' + x[1].innerHTML;
+    </script>
+</div>
 <br>
 </body>
 </html>
