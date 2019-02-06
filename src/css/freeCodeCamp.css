@@ -1,0 +1,30 @@
+#main{
+    background:#F0F0F0;
+    padding: 15px;
+}
+#title{
+    text-align: center;
+}
+#image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-div{
+    background-color: white;
+    display: block;
+    margin-bottom: 25px;
+}
+p{
+    text-align: center;
+    line-height: 1.5;
+}
+
+ul{width: 60%;
+    margin: auto;
+}
+li{
+    line-height: 1.5;
+}
+
