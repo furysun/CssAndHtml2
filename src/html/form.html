@@ -6,14 +6,20 @@
     <title>form</title>
 </head>
 <body>
-<p><strong>Survey Form</strong></p>
-<form>
-    <p>*Name: <input type="text" placeholder="Enter your name" /></p>
-    <p>*Email: <input type="text" placeholder="Enter your Email"/></p>
-    <p>*Age: <input type="text" placeholder=" Age"/></p>
-</form>
-<p>Which option best describes your current role?</p>
-    <select>
+<h1 id="title"><strong>Survey Form</strong></h1>
+<div id="main">
+    <form id="survey-form" action="/action_page.php">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <p>*Name: <input id="name-label" id="name" class="f" type="text" placeholder="Enter your name"/></p>
+        <p>*Email: <input id="email" id="email-label" class="f" type="text" placeholder="Enter your Email"/></p>
+        <p> *Age: <input id="number" id="number-label" type="number" class="f" name="points" step="1" min="1" max="50"
+                         placeholder=" Age"/></p>
+
+        <p id="error" hidden>error</p>
+    </form>
+
+    <p>Which option best describes your current role?</p>
+    <select id="dropdown">
         <option value="student">Student</option>
         <option value="Full Time Job">Full Time Job</option>
         <option value="Full Time Learner">Full Time Learner</option>
@@ -22,39 +28,46 @@
     </select>
 
 
+    <form action="action_page.php">
+        <p>* How likely is that you would recommend freeCodeCamp to a friend?</p>
+        <input type="radio" name="gender" value="male">Definitely<br>
+        <input type="radio" name="gender" value="female">Maybe<br>
+        <input type="radio" name="gender" value="other">Not sure<br><br>
+    </form>
 
-<form action="action_page.php">
-    <p>* How likely is that you would recommend freeCodeCamp to a friend?</p>
-    <input type="radio" name="gender" value="male" checked>man<br>
-    <input type="radio" name="gender" value="female">woman<br>
-    <input type="radio" name="gender" value="other">transgender<br><br>
-</form>
-
-<p>What do you like most in FCC:</p>
+    <p>What do you like most in FCC:</p>
     <select>
         <option value="Challenges">Challenges</option>
         <option value="Projects">Projects</option>
         <option value="Community">Community</option>
         <option value="Open Source">Open Source</option>
     </select>
-<p>Things that should be improved in the future
-    (Check all that apply):  </p>
+    <p>Things that should be improved in the future
+        (Check all that apply): </p>
 
-<form action="/action_page.php">
-    <input type="checkbox"> Front-end Projectse<br>
-    <input type="checkbox"> Back-end Projects<br>
-    <input type="checkbox">Data Visualization<br>
-    <input type="checkbox">Challenges<br>
-    <input type="checkbox">Open Source Community<br>
-    <input type="checkbox">Gitter help rooms<br>
-    <input type="checkbox">Videos<br>
-    <input type="checkbox">City Meetups<br>
-    <input type="checkbox">Wiki<br>
-    <input type="checkbox">Forum<br>
-    <input type="checkbox">Additional Courses<br>
-    <p>Any Comments or Suggestions?</p>
-    <input type="text" placeholder="Enter your comment heer...">
-    <input type="submit" value="Submit">
-</form>
+    <form action="/action_page.php">
+        <input type="checkbox"> Front-end Projectse<br>
+        <input type="checkbox"> Back-end Projects<br>
+        <input type="checkbox">Data Visualization<br>
+        <input type="checkbox">Challenges<br>
+        <input type="checkbox">Open Source Community<br>
+        <input type="checkbox">Gitter help rooms<br>
+        <input type="checkbox">Videos<br>
+        <input type="checkbox">City Meetups<br>
+        <input type="checkbox">Wiki<br>
+        <input type="checkbox">Forum<br>
+        <input type="checkbox">Additional Courses<br>
+        <p>Any Comments or Suggestions?</p>
+
+        <input id="entry-comment" type="text" placeholder="Enter your comment heer...">
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</div>
+<script>
+    if (document.getElementById("age") != Number) {
+        document.getElementById("error").hidden = true;
+    }
+</script>
+
 </body>
 </html>

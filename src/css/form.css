@@ -1,0 +1,28 @@
+#main{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 75px;
+    border-radius: 5px;
+}
+body{
+    background-color: #F1FFF1;
+}
+.f{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+}
+
+#title{
+    text-align: center;
+
+}
+#entry-comment{
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    width: 30%;
+    padding: 25px 20px;
+}
