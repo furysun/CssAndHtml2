@@ -45,7 +45,7 @@
     <p>Things that should be improved in the future
         (Check all that apply): </p>
 
-    <form action="/action_page.php">
+    <div action="/action_page.php">
         <input type="checkbox"> Front-end Projectse<br>
         <input type="checkbox"> Back-end Projects<br>
         <input type="checkbox">Data Visualization<br>
@@ -59,15 +59,15 @@
         <input type="checkbox">Additional Courses<br>
         <p>Any Comments or Suggestions?</p>
 
-        <input id="entry-comment" type="text" placeholder="Enter your comment heer...">
-        <p><input type="submit" value="Submit"></p>
-    </form>
-</div>
-<script>
-    if (document.getElementById("age") != Number) {
-        document.getElementById("error").hidden = true;
-    }
-</script>
+        <textarea id="entry-comment" rows="4" cols="50" placeholder="Enter your comment heer..."></textarea>
 
+        <p><input type="submit" value="Submit"></p>
+        </form>
+    </div>
+    <script>
+        if (document.getElementById("age") != Number) {
+            document.getElementById("error").hidden = true;
+        }
+    </script>
 </body>
 </html>

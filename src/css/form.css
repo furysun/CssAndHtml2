@@ -11,7 +11,7 @@ body{
 .f{
     width: 30%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 28px 0;
     border-radius: 5px;
     border: 2px solid #dddddd;
 }
@@ -23,6 +23,5 @@ body{
 #entry-comment{
     border-radius: 5px;
     border: 2px solid #dddddd;
-    width: 30%;
-    padding: 25px 20px;
+    padding: 10px 15px;
 }
