@@ -1,27 +1,70 @@
 #main{
+    padding-top: 20px;
+    padding-bottom:10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 5px;
     text-align: center;
     background-color: white;
-    padding: 20px;
-    margin: 75px;
-    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
 }
+
 body{
-    background-color: #F1FFF1;
-}
-.f{
-    width: 30%;
-    padding: 12px 20px;
-    margin: 28px 0;
-    border-radius: 5px;
-    border: 2px solid #dddddd;
+    background-color: #AFEEEE;
 }
 
 #title{
     text-align: center;
-
 }
 #entry-comment{
     border-radius: 5px;
     border: 2px solid #dddddd;
     padding: 10px 15px;
+}
+
+.flex-container {
+    display: flex;
+    padding: 5px;
+}
+
+.left{
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+
+}
+.right{
+    width: 50%;
+    text-align: left;
+}
+
+#name-label,#email-label,#number-label {
+    width: 60%;
+    height: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+select{
+    width: 35%;
+    margin: 5px;
+    height: 35px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit{
+    width: 10%;
+    background-color: powderblue;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.select-label{
+    margin-top: 5px;
 }
