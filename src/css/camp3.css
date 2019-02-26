@@ -1,0 +1,194 @@
+
+a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+p {
+    margin: 0px;
+}
+
+span {
+    color: gray;
+    margin-right: 20px;
+
+}
+
+body {
+    margin: 0px;
+}
+
+iframe {
+    height: 320px;
+    width: 520px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header-img {
+    width: 50%;
+}
+
+#right {
+    text-align: right;
+}
+
+#header {
+    background-color: #f1f1f1;
+}
+
+#email {
+    width: 20%;
+    padding: 5px;
+    margin: 10px;
+}
+
+#video{
+margin: 35px;
+}
+#main {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+
+}
+
+#submit {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#submit:hover {
+    background-color: darkorange;
+
+}
+
+.product-style {
+    border-style: groove;
+}
+
+.head-product {
+    background-color: gainsboro;
+}
+
+.center {
+    text-align: center;
+}
+
+.nav-link {
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    font-size: 30px;
+}
+
+.feature {
+    display: flex;
+}
+
+.flex-containerContent {
+    display: flex;
+}
+
+.flex-containerContent > div {
+    background-color: #f1f1f1;
+    width: 100px;
+}
+
+.right {
+    text-align: right;
+    margin-right: 45px;
+}
+
+.fl-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fl-container > div {
+    background-color: #f1f1f1;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+}
+
+.footer-style {
+    background-color: gainsboro;
+    margin-top: 30px;
+    height: 50px;
+    padding: 17px;
+}
+
+.btn-group .button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-group .button:hover {
+    background-color: darkorange;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: stretch;
+}
+
+.flex-footer > div {
+    width: 100px;
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 600px) {
+    iframe {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+
+
