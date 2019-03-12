@@ -7,8 +7,8 @@ a {
 
 ul {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 li {
@@ -17,17 +17,25 @@ li {
 }
 
 p {
-    margin: 0px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 20px;
 }
 
 span {
-    color: gray;
+    color: grey;
     margin-right: 20px;
-
+    font-size: 17px;
 }
 
 body {
-    margin: 0px;
+    margin: 0;
+    background-color: #f1f1f1;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
 }
 
 iframe {
@@ -35,22 +43,18 @@ iframe {
     width: 520px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#header-img {
-    width: 50%;
-}
-
-#right {
-    text-align: right;
+#main {
+    margin-top: 100px;
 }
 
 #header {
     background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+}
+
+#header-img {
+    width: 50%;
 }
 
 #email {
@@ -59,14 +63,8 @@ iframe {
     margin: 10px;
 }
 
-#video{
-margin: 35px;
-}
-#main {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    background-color: #f1f1f1;
-
+#video {
+    margin: 35px;
 }
 
 #submit {
@@ -84,11 +82,10 @@ margin: 35px;
 
 #submit:hover {
     background-color: darkorange;
-
 }
 
-.product-style {
-    border-style: groove;
+.right {
+    text-align: right;
 }
 
 .head-product {
@@ -117,44 +114,24 @@ margin: 35px;
 
 .feature {
     display: flex;
+    margin: 15px;
 }
 
-.flex-containerContent {
-    display: flex;
-}
-
-.flex-containerContent > div {
-    background-color: #f1f1f1;
-    width: 100px;
-}
-
-.right {
-    text-align: right;
-    margin-right: 45px;
-}
-
-.fl-container {
+#pricing {
     display: flex;
     justify-content: center;
-}
-
-.fl-container > div {
-    background-color: #f1f1f1;
-    width: 25%;
-    margin: 10px;
     text-align: center;
-    line-height: 45px;
-    font-size: 30px;
 }
 
-.footer-style {
-    background-color: gainsboro;
-    margin-top: 30px;
-    height: 50px;
-    padding: 17px;
+.product {
+    background-color: #f1f1f1;
+    width: 23%;
+    margin: 10px;
+    line-height: 35px;
+    border-style: groove;
 }
 
-.btn-group .button {
+.button {
     background-color: orange;
     border: none;
     color: white;
@@ -167,20 +144,28 @@ margin: 35px;
     border-radius: 3px;
 }
 
-.btn-group .button:hover {
+.button:hover {
     background-color: darkorange;
 }
 
-.flex-footer {
-    display: flex;
-    align-items: stretch;
+.icon {
+    color: darkorange;
+    width: 120px;
+    margin-right: 45px;
 }
 
-.flex-footer > div {
-    width: 100px;
+.description {
+    width: 800px;
+}
+
+.footer {
+    width: 69%;
+    background-color: gainsboro;
+    height: 50px;
+    padding: 27px;
     text-align: right;
+    margin: 15px auto auto;
 }
-
 
 @media only screen and (max-width: 600px) {
     iframe {
@@ -188,7 +173,3 @@ margin: 35px;
         width: 100px;
     }
 }
-
-
-
-
