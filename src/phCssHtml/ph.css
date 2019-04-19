@@ -1,0 +1,237 @@
+body, html {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#header {
+    height: 600px;
+    flex-basis: 1200px;
+    background: url("img/header.jpg") no-repeat center;
+}
+
+#header-menu {
+    justify-content: space-between;
+    display: flex;
+}
+
+#travelly {
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 40px;
+}
+
+#bar {
+    margin-right: 100px;
+    padding-top: 40px;
+}
+
+#search {
+    text-align: center;
+    padding-top: 280px;
+    height: 40px;
+}
+
+.header-search-button {
+    background: #fd4f32;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 120px;
+    margin-top: 25px;
+    margin-left: 0;
+    margin-left: -1px;
+}
+
+p {
+    margin: 0;
+    font-size: 52px;
+}
+
+.top-dest {
+    background: #eeeeee;
+    height: 530px;
+}
+
+.top-dest-header {
+    margin-left: 100px;
+    height: 140px;
+    align-content: center;
+}
+
+.top-dest-countries {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    height: 320px;
+    width: 1000px;
+}
+
+.country {
+    background: white;
+    flex-basis: 240px;
+    height: 318px;
+    border-bottom: solid 1px silver;
+}
+
+.before-u-leave {
+    height: 540px;
+    align-content: center;
+}
+
+.before-u-leave-header {
+    height: 190px;
+}
+
+.text-before {
+    font-size: 52px;
+    color: #333333;
+    padding-left: 100px;
+    padding-top: 85px;
+}
+
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.inform {
+    flex-basis: 260px;
+}
+
+
+.coutry-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.price {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.inform-font {
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.form-text {
+    line-height: 1.5;
+    font-size: 13px;
+    margin-left: 20px;
+    color: gray;
+}
+
+
+.top-font-header {
+    padding-top: 60px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.top-text-header {
+    line-height: 2.5;
+    font-size: 13px;
+    color: gray;
+}
+
+.search-input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=search] {
+    margin-right: -4px;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    border: none;
+    width: 330px;
+    height: 40px;
+}
+
+.get-hottest-deals {
+    height: 234px;
+    text-align: center;
+}
+
+.get-inform {
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 80px;
+}
+
+input[type=text] {
+    margin-right: -4px;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    border: none;
+    background: #eeeeee;
+    width: 330px;
+    height: 38px;
+}
+
+input[type=submit] {
+    background: #fd4f32;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 120px;
+    margin-top: 25px;
+    margin-left: -1px;
+}
+
+.footer {
+    display: flex;
+    height: 73px;
+    background: #eeeeee;
+    color: #333333;
+    left: 0;
+    bottom: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.copyright-travell {
+    margin-top: 30px;
+    color: #8b8b8b;
+}
+
+.menu {
+    word-spacing: 20px;
+    margin-top: 30px;
+    padding-left: 55px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333333;
+}
+
+@media (max-width: 600px) {
+
+}
